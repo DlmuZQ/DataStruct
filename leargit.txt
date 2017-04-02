@@ -1,0 +1,10 @@
+1、Git安装与初始化
+2、Git初始配置,采用命令行的方式配置：
+	git config –global user.name “Your Name”
+	git config –global user.email “Your Email”
+3、初始化目录仓库：git init
+4、将文件提交到仓库：git commit -m "相关信息"
+5、查看文件状态，是否被修改：git status
+6、查看修改的部分：git diff filename
+7、查看日志：git log
+
