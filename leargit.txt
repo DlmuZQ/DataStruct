@@ -13,3 +13,14 @@
 9、工作区==>通过git add命令将工作区文件加入到 ==>暂存区 ==>git commit ==>提交修改
 
 ##################################################
+10、想直接丢弃工作区的修改时，用命令git checkout -- file；若还添加到了暂存区时，首先用命令git reset HEAD file，恢复版本，然后再放弃修改
+**************************************************************************
+*重要配置远程仓库：
+*ssh-keygen -t rsa -C "youremail@example.com"
+*在目录下找到.ssh目标
+*将id_rsa.pub上的内容粘贴到gitHub上
+*链接远程： git remote add origin git@github.com:michaelliao/learngit.git
+**************************************************************************
+11、把本地库的所有内容推送到远程库上：git push -u origin master；之后可以git push origin master提交
+
+
