@@ -28,6 +28,21 @@ void DSSort::BubbleSort(std::vector<int>& vInData)
 	}
 }
 
+void DSSort::SelectSort(std::vector<int>& vInData)
+{
+	int i, j, min;
+	for (i = 0; i < vInData.size(); i++) {
+		min = i;
+		for (j = i + 1; j < vInData.size(); j ++)
+		{
+			if (vInData[i] > vInData[j])
+				min = j;
+		}
+		if (min != i)
+			std::swap(vInData[i], vInData[min]);
+	}
+}
+
 
 DSSort::~DSSort()
 {
